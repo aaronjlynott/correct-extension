@@ -1,0 +1,20 @@
+#check to see if input ends with gif, jpg, jpeg, png, pdf, txt, zip - if it does output after .
+#otherwise application/octet-stream
+file_extension = (input('File name: '))
+
+if file_extension.strip().casefold().endswith('.jpg'):
+    print('image/jpeg')
+elif file_extension.strip().casefold().endswith('.jpeg'):
+    print('image/jpeg')
+elif file_extension.strip().casefold().endswith('.gif'):
+    print('image/gif')
+elif file_extension.strip().casefold().endswith('.png'):
+    print('image/png')
+elif file_extension.strip().casefold().endswith('.pdf'):
+    print('application/pdf')
+elif file_extension.strip().casefold().endswith('.txt'):
+    print('text/plain')
+elif file_extension.strip().casefold().endswith('.zip'):
+    print('application/zip')
+else:
+    print('application/octet-stream')
